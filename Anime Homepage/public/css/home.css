@@ -1,0 +1,203 @@
+body {
+  font-family: 'MuseoModerno', cursive;
+
+  width:100%;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+#react{
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#load {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FAFAFA;
+
+  transition: opacity 1s;
+
+}
+
+#load-gif {
+
+  display: block;
+  object-fit: contain;
+
+}
+
+#main {
+
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+
+}
+
+#nav {
+  flex: 0 0 5vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer {
+  flex: 0 0 5vh;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wallpaper {
+
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+
+}
+
+#wallpaper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#main h1 {
+
+  color: white;
+  text-align: center;
+
+}
+
+.greeting {
+
+  flex: 1 1 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#name-greet {
+  font-size:75px;
+}
+
+#name-entry {
+  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+#name-input {
+  color: white;
+  background: transparent;
+  font-size: 100px;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 35vw;
+}
+
+#name-input:focus{
+  outline: none;
+}
+
+
+#time{
+  font-size: 200px;
+  text-align: center;
+}
+
+#time-greeting{
+  font-size: 50px;
+  text-align: center
+}
+
+.search {
+
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  align-self: flex-end;
+  margin: 0 0 2vh 2vh;
+  border: 2px solid white;
+
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+
+  transition: width .4s;
+
+}
+
+.search:hover{
+  width: 300px;
+  transition: width .4s;
+}
+
+#search-input {
+
+  height: 25px;
+  border: 0px solid white;
+  background: transparent;
+  flex: 1 1 auto;
+  color: white;
+  font-size: 20px;
+  margin: 0 10px 0 0;
+
+  min-width: 0;
+
+}
+
+.search:focus-within{
+  width: 300px;
+  transition: width .4s;
+}
+
+#search-input:focus{
+  outline: none;
+}
+
+#search-input:valid{
+  width: 300px;
+}
+
+#search-icon {
+  color: white;
+  margin: 0 5px 0 5px;
+}
+
+#redditlink {
+  margin: 0 2vh 2vh 0;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.contains-text{
+  width:300px;
+}
+
+.japanese {
+  font-family: 'Kosugi Maru', sans-serif;
+}
